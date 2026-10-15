@@ -1,9 +1,9 @@
-<!DOCKTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <p>My Profile</p>
+        <title>My Profile</title>
     </head>
     <body>
         <header>
@@ -15,12 +15,13 @@
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
+        </header>
             <main>
                 <section id="about">
                     <h2>About</h2>
                     <p>
                         Hi!! I am a second year student at Vellore Institute of Technology.
-                        I am pationate about tech and have been actively studying new concepts.
+                        I am passionate about tech and have been actively studying new concepts.
                         I am curious and good at problem solving skills.
                     </p>
                     <img src="demo1.png" alt="My picture">
@@ -52,7 +53,7 @@
                         <tbody>
                             <tr><td>KeySign</td><td>Dynamic behavioural authentication</td></tr>
                             <tr><td>LockSight</td><td>Lightweight dynamic deadlock predictor</td></tr>
-                            <tr><td>Nexus</td><td>RAG based codebase inteligence dashboard</td></tr>
+                            <tr><td>Nexus</td><td>RAG based codebase intelligence dashboard</td></tr>
                         </tbody>
                     </table>
                 </section>
@@ -60,23 +61,23 @@
                     <h2>Contact</h2>
                     <form>
                         <label for="name">Name</label>
-                        <input type="name" id="name" name="name" required />
+                        <input type="text" id="name" name="name" required />
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" required />
                         <label for="status">Status</label>
                         <select id="status" name="status" required>
-                            <option id="student">Student</option>
-                            <option id="graduate">Graduate</option>
-                            <option id="employed">Employed</option>
+                            <option value="student">Student</option>
+                            <option value="graduate">Graduate</option>
+                            <option value="employed">Employed</option>
                         </select>
-                        <textarea name="about" rows="4" >Tell something about yourself</textarea>
-                        <button type="submit">Sign-up</button>
+                        <label for="intro">About</label>
+                        <textarea id="intro" name="intro" rows="4" placeholder="Tell something about yourself"></textarea>
+                        <button type="submit">Send</button>
                     </form>
                 </section>
             </main>
             <footer>
                 <p>&copy; 2026 My Profile. All rights reserved.</p>
             </footer>
-        </header>
     </body>
 </html>
