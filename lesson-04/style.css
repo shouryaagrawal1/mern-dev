@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: var(--head1);
+}
+body{
+    margin: 3px;
+    font-family: "Google Sans", sans-serif;
+    line-height: 1.6;
+    background-color: var(--back);
+}
+:root{
+    --head1: #757876;
+    --head2: #121212;
+    --tableh: #161f19;
+    --tr1: #376145;
+    --tr2: #376145;
+    --button: #0a451d;
+    --buttonh: #1ec756;
+    --text: #232423;
+    --cardl: #32b869;
+    --back: #9ffcc6;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+nav a{
+    border: 2px solid var(--button);
+    margin: 0;
+    padding: 1px 3px;
+    background-color: var(--button);
+    border-radius: 4px;
+    color: white;
+}
+nav a:hover{
+    color: yellow;
+}
+section{
+    background-color: var(--cardl);
+    margin: 3px;
+    border-radius: 8px;
+    padding: 10px;
+}
+h2{
+    color: var(--head2);
+}
+p, img, ol, ul, table, form {
+    border: 0px solid;
+    background-color:aquamarine;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 3px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+table tr, td{
+    border: 1px solid;
+    padding: auto;
+    text-align: center;
+}
+form{
+    padding: 4px;
+}
+form input, select, textarea, button{
+    border: 1px solid grey;
+    display: block;
+}
+form input, select, textarea, button:focus{
+    border: 2px solid black; 
+}
+button{
+    background-color: var(--button);
+    color: whitesmoke;
+}
+button:hover{
+    background-color: var(--buttonh);
+}
+
+

@@ -1,0 +1,16 @@
+h2 {
+    color : blue;
+}
+nav a{
+    color : yellow;
+}
+nav a:hover{
+    color : red;
+}
+body{
+    font-family: "Google Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #222222;
+}
