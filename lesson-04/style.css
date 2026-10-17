@@ -3,24 +3,31 @@
 }
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 header{
     position: sticky;
     top: 0;
     background-color: var(--head1);
 }
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
 body{
     margin: 3px;
+    color: var(--text);
     font-family: "Google Sans", sans-serif;
     line-height: 1.6;
     background-color: var(--back);
 }
 :root{
-    --head1: #757876;
+    
     --head2: #121212;
     --tableh: #161f19;
+    --head1: #161f19;
     --tr1: #376145;
-    --tr2: #376145;
+    --tr2: #508b64;
     --button: #0a451d;
     --buttonh: #1ec756;
     --text: #232423;
@@ -29,14 +36,27 @@ body{
 }
 h1{
     color: white;
+    margin: 0;
+    text-align: center;
+}
+img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+nav{
     text-align: center;
 }
 nav a{
+    display: inline-block;
     border: 2px solid var(--button);
-    margin: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
     padding: 1px 3px;
     background-color: var(--button);
     border-radius: 4px;
+    border-color: white;
     color: white;
 }
 nav a:hover{
@@ -44,45 +64,73 @@ nav a:hover{
 }
 section{
     background-color: var(--cardl);
-    margin: 3px;
+    margin-bottom: 10px;
     border-radius: 8px;
     padding: 10px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
 }
 h2{
     color: var(--head2);
 }
-p, img, ol, ul, table, form {
+ul, ol{
+    list-style-position: inside;
+}
+.content-area, img, ol, ul, table, form {
     border: 0px solid;
     background-color:aquamarine;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding: 10px 6px;
     border-radius: 3px;
 }
 table{
     border-collapse: collapse;
     width: 100%;
+    border-radius: 3px;
 }
-table tr, td{
+table tr, table td, table th{
     border: 1px solid;
-    padding: auto;
+    padding: 10px;
     text-align: center;
+    color: white;
+}
+th{
+    background-color: var(--tableh);
+}
+tr:nth-child(even){
+    background-color: var(--tr1);
+}
+tr:nth-child(odd){
+    background-color: var(--tr2);
 }
 form{
     padding: 4px;
 }
 form input, select, textarea, button{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
     border: 1px solid grey;
+    border-radius: 6px;
+    font: inherit;
     display: block;
 }
-form input, select, textarea, button:focus{
-    border: 2px solid black; 
+form input:focus,select:focus, textarea:focus{
+    outline: 2px solid var(--button);
+    background-color: yellowgreen;
 }
 button{
     background-color: var(--button);
+    margin-top: 5px;
+    width: auto;
+    cursor: pointer;
     color: whitesmoke;
 }
 button:hover{
     background-color: var(--buttonh);
+}
+footer{
+    text-align: center;
+    color: #888888;
+    padding: 0px;
 }
 
 
