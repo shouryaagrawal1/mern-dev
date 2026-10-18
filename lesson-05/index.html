@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <title>My Profile</title>
+    </head>
+    <body>
+        <header>
+            <h1>SHOURYA AGRAWAL</h1>
+            <nav>
+                <a href="#about">ABOUT</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#roadmap">LEARNING ROAD MAP</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>ABOUT</h2>
+                <div class="content-area">
+                    <p >
+                        I am a Second year student at Vellore Institute Of Technology
+                        completing B.Tech degree in Information Technology.
+                        I am a curious person with good problem solving skills.
+                        I have always been quite passionate about tech.
+                    </p>
+                    <img src="img.png" alt="my picture">
+                </div>
+            </section>
+            <section id="skills">
+                <h2>SKILLS</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </section>
+            <section id="roadmap">
+                <h2>LEARNING ROAD MAP</h2>
+                <ol>
+                    <li>Basic network concepts</li>
+                    <li>Git/GitHub</li>
+                    <li>HTML basics</li>
+                    <li>CSS basics</li>
+                </ol>
+            </section>
+            <section id="projects">
+                <h2>PROJECTS</h2>
+                <div class="projects">
+                    <div class="project-card">
+                        <h3>KeySign</h3>
+                        <p>
+                            It is a dynamic behavioural authenticator that
+                            uses typing characteristics of a person as their fingerprint.
+                            runs locally on the system and provides additional layer of security.
+                        </p>
+                    </div>
+                    <div class="project-card">
+                        <h3>LockSight</h3>
+                        <p>
+                            It is a lightweight dynamic deadlock predictor capable of predicting
+                            hidden deadlock in a program and terminates it if it actually encounters one.
+                            Can be directly integrated into CI/CD pipelines.
+                        </p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Nexus</h3>
+                        <p>
+                            It is a dual engine RAG model that acts as a codebase intelligence dashboard.
+                            It utilizes both graph and vector database to store relations and semantics in a codebase locally.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>CONTACT</h2>
+                <form>
+                    <div class="form-entry">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" name="name" required />
+                    </div>
+                    <div class="form-entry">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" required/>
+                    </div>
+                    <div class="form-entry">
+                        <label for="status">Status</label>
+                        <select id="status" name="status" required>
+                            <option value="student">Student</option>
+                            <option value="graduate">Graduate</option>
+                            <option value="employed">Employed</option>
+                            <option value="unemployed">Unemployed</option>
+                        </select>
+
+                    <textarea id="message" name="message" placeholder="Enter the message..." rows="4" required></textarea>
+                    </div>
+                    <button id="send" type="submit">Send</button> 
+                </form>
+            </section>
+        </main>
+        <footer>&copy; Shourya 2026</footer>
+    </body>
+</html>
