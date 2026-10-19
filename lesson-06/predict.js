@@ -1,0 +1,13 @@
+console.log(typeof null);
+console.log("5" + 3);
+console.log("5" - 3);
+console.log(0.1 + 0.2 === 0.3);
+console.log(5 == "5");
+console.log(5 === "5");
+console.log([] ? "truthy" : "falsy");
+console.log("" ? "truthy" : "falsy");
+console.log(10 / 4);
+console.log(Math.floor(10 / 4));
+console.log(null ?? "default");
+console.log(0 || "default");
+console.log(0 ?? "default");
