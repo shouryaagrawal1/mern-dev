@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="widht=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
@@ -84,23 +84,26 @@
                 <h2>CONTACT</h2>
                 <form>
                     <div class="form-entry">
-                        <label for="name">Name</label>
-                        <input id="name" type="text" name="name" required />
-                    </div>
-                    <div class="form-entry">
-                        <label for="email">Email</label>
-                        <input id="email" type="email" name="email" required/>
-                    </div>
-                    <div class="form-entry">
-                        <label for="status">Status</label>
-                        <select id="status" name="status" required>
-                            <option value="student">Student</option>
-                            <option value="graduate">Graduate</option>
-                            <option value="employed">Employed</option>
-                            <option value="unemployed">Unemployed</option>
-                        </select>
-
-                    <textarea id="message" name="message" placeholder="Enter the message..." rows="4" required></textarea>
+                        <div class="name">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" required />
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" required/>
+                        </div>
+                        <div class="status">
+                            <label for="status">Status</label>
+                            <select id="status" name="status" required>
+                                <option value="student">Student</option>
+                                <option value="graduate">Graduate</option>
+                                <option value="employed">Employed</option>
+                                <option value="unemployed">Unemployed</option>
+                            </select>
+                        </div>
+                        <div class="message">
+                            <textarea id="message" name="message" placeholder="Enter the message..." rows="4" required></textarea>
+                        </div>
                     </div>
                     <button id="send" type="submit">Send</button> 
                 </form>
